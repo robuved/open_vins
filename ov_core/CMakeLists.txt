@@ -8,7 +8,7 @@ find_package(catkin QUIET COMPONENTS roscpp rosbag tf std_msgs geometry_msgs sen
 
 # Include libraries
 find_package(Eigen3 REQUIRED)
-find_package(OpenCV 3 REQUIRED)
+find_package(OpenCV REQUIRED EXACT 3.4.6 PATHS /home/victor/opencv_ws/opencv_3.4.6/libs/share/OpenCV)
 find_package(Boost REQUIRED COMPONENTS system filesystem thread date_time)
 
 # display message to user
